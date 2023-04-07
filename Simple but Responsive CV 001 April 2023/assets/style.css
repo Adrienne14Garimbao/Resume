@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 1;
+	box-sizing: border-box;
+	/*background-color: #E0E0E2;*/
+}
+:root {
+	--primary-color: rgba(28,202,236);
+	--text-color: #727171; 
+}
+html {
+	font-size: 10px;
+	background-color:rgba(247,248,252);
+}
+body {
+	font-family: Inter, sans-serif;
+	background-color: rgba(247,248,252);
+	color: black; /* White <<<<<<<<<<<<< */
+}
+
+/* common styles */
+img {	
+	width: 100%;
+	padding: 20%;
+}
+a {
+	text-decoration: none;
+	color: white; /* Black <<<<<<<<<<<<< */
+}
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+}
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.item_preTitle {
+	font-size: 1.4rem;
+	color: rgba(77,78,80);
+	font-weight: 400;
+}
+.item_title {
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+.item_subtitle {
+	font-size: 1.4rem;
+	color: rgba(77,78,80);
+	font-weight: 400;
+}
+
+/* layouts */
+.container {
+	max-width: 1000px;
+	width: auto; /* 100% */
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: rgba(247,248,252); /*#E0E0E2 <<<<<<<<<<<<<<<< */
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+	}
+
+}
+
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+
+.group-1 {
+	border-style: solid; /* Find solution here <<<<<<<<<<<<<<<< */
+	border-color: white;
+	border-width: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.profile {
+		margin-bottom: 0;
+	}
+}
+
+/* profile */
+.profilePicAndName{
+	background-color: white;
+	font-weight: 700;
+	color:rgba(77,78,80);
+	text-align: center;
+	justify-content: center;
+}
+
+.profile_container {
+	display: flex;
+	gap: 2rem;
+}
+.profile_profileImg {
+	max-width: 250px;
+}
+.entitledName{
+	color: rgba(77,78,80);
+	font-weight: 700;
+	font-size: 2.1rem;
+}
+.profile_name{
+	color: rgba(77,78,80); /* Adrienne Garimbao <<<<<<<<<<<<<<<< */
+	font-size: clamp(2re, 8vw, 4rem);
+	text-transform: uppercase;
+	margin-bottom: -0.8rem;
+
+}
+.profile_title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.downloadBtn {
+	color: black;;
+	display: block;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	text-align: center;
+	
+}
+.downloadBtn:hover {
+	color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+	.profile_container {
+		flex-direction: column;
+	}
+}
+
+/* Expertise */
+.skills_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+/* Ref  */
+.ref_item {
+	margin-top: 2rem;
+}
+.ref_name {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+/* eduction */
+.edu_item {
+	margin-top: 2rem;
+}
+
+/* certification */
+.certification, .socials{
+	border-style: solid;
+	border-color: white;
+	border-width: 1rem;
+	background-color: white;
+	color:rgba(77,78,80);
+	gap: 1rem;
+}
+.certification_item {
+	margin-top: 2rem;
+}
+/* exp */
+.exp_item {
+	margin-top: 2rem;
+}
+
+/* awards */
+.awards_item {
+	margin-top: 2rem;
+}
+/* Interests */
+.interest_item {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+	gap: 1rem;
+}
+
+.interest_item svg {
+	width: 2rem;
+}
+
+.social_items {
+	margin-top: 2rem;
+}
+.social_item {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--text-color);
+}
+.social_item:hover {
+	color: var(--primary-color);
+}
+.social_item svg {
+	width: 2rem;
+}
+
+/* Download Button */
+.downloadContainer{
+	border-style: solid;
+	border-color: white;
+	border-width: 1rem;
+	background-color: white;
+	gap: 1rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
